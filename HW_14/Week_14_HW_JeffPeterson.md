@@ -92,7 +92,7 @@ Answer the following questions about sessions and cookies:
     Content-type: text/html
     Set-Cookie: cart=Bob
     ```
-    `Set-cookie:`
+    Answer: `Set-cookie:`
 
 16. Which request header will continue the client's session?
 
@@ -101,7 +101,7 @@ Answer the following questions about sessions and cookies:
     Host: www.example.org
     Cookie: cart=Bob
     ```
-    `Cookie: cart=Bob`
+    Answer: `Cookie: cart=Bob`
 
 #### Example HTTP Requests and Responses
 
@@ -185,7 +185,7 @@ X-XSS-Protection: 1; mode=block
 Answer the following questions about monoliths and microservices:
 
 26. What are the individual components of microservices called?
-  - machines
+  - Service
 
 
 27. What is a service that writes to a database and communicates to other services?
