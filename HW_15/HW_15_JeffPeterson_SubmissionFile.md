@@ -105,7 +105,7 @@ Answer: You can set up a forwarding service to help keep malicious attacks at ba
 
    - Explain why you chose the answer that you did.
 
-Answer: False because you can control the input validation more on the server side than trying to validate on many different clients' machines locally.
+Answer: False because you can control the input validation more on the server side than trying to validate on many different clients' machines locally. Users can disable JavaScript locally and still submit malformed data.
 
 ____
 
