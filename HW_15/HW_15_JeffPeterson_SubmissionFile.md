@@ -144,7 +144,7 @@ Security enhancements designed to require users to present two or more pieces of
    - Factor 2: Physical Keys like smartcards and hard tokens
 
 
-   - Factor 3: Biometrics like FaceID, Figerprint authentication
+   - Factor 3: Biometrics like FaceID, Fingerprint authentication
 
 
    - Factor 4: Location like GPS detection
