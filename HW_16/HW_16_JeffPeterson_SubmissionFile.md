@@ -50,6 +50,7 @@ Your client has asked that you help identify any vulnerabilities with their file
   - `nmap -sV 192.168.0.10`
 
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
+  - `nmap -sV -oN /root/Desktop/zenmapscan.txt 192.168.0.10`
 
 - Zenmap vulnerability script command:
 
