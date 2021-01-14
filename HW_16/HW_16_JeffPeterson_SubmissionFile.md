@@ -57,7 +57,7 @@ Your client has asked that you help identify any vulnerabilities with their file
 
   - [smb-enum-scan](Scans/nmap-smb-enum-scan.txt)
 
-- Once you have identified this vulnerability, answer the following questions for your client:
+Once you have identified this vulnerability, answer the following questions for your client:
   1. What is the vulnerability:
       - SMB is open and doesn't have any authentication requirements to access the server.
 
@@ -66,7 +66,7 @@ Your client has asked that you help identify any vulnerabilities with their file
 
   3. What mitigation strategies can you recommendations for the client to protect their server:
       - Add authentication requirements to access the SMB share server.
-      - Make sure SMB is patched and updated.
+      - Make sure SMB is up to date with latest version.
       - Use more secure technologies to share information on a server and require a corporate VPN to access.
 
 ---
