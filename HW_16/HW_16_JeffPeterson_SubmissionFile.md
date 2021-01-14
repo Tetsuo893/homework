@@ -60,6 +60,7 @@ Your client has asked that you help identify any vulnerabilities with their file
 Once you have identified this vulnerability, answer the following questions for your client:
   1. What is the vulnerability:
       - SMB is open and doesn't have any authentication requirements to access the server.
+      - ![SMB Anonymous Login](Images/HW-16-SMB-AnonymousLogin.png)
 
   2. Why is it dangerous:
       - anyone who has the IP address can login to the SMB share and upload malicious files or take any files that might help an attacker access more of the system.
