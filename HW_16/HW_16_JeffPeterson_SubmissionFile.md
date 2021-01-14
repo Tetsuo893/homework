@@ -54,7 +54,8 @@ Your client has asked that you help identify any vulnerabilities with their file
 
 - Zenmap vulnerability script command:
   - `nmap -sV --script smb-enum-* -p 139,445 192.168.0.10`
-  ![smb-enum-scan](Scans/nmap-smb-enum-scan.txt)
+  
+  [smb-enum-scan](Scans/nmap-smb-enum-scan.txt)
 
 - Once you have identified this vulnerability, answer the following questions for your client:
   1. What is the vulnerability:
@@ -66,7 +67,7 @@ Your client has asked that you help identify any vulnerabilities with their file
   3. What mitigation strategies can you recommendations for the client to protect their server:
     - Add authentication requirements to access the SMB share server.
     - Make sure SMB is patched and updated.
-    - Use more secure technologies to share information on a server and require a corporate VPN to access. 
+    - Use more secure technologies to share information on a server and require a corporate VPN to access.
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
