@@ -1,0 +1,15 @@
+# Nmap 7.80 scan initiated Wed Jan 13 09:10:28 2021 as: nmap -p 139,445 -oN /root/Desktop/smb-protocols-scan.txt -oX /tmp/zenmap-CZyJnH.xml --script smb-protocols 192.168.0.10
+Nmap scan report for 192.168.0.10
+Host is up (0.0059s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+MAC Address: 00:15:5D:00:04:03 (Microsoft)
+
+Host script results:
+| smb-protocols: 
+|   dialects: 
+|_    NT LM 0.12 (SMBv1) [dangerous, but default]
+
+# Nmap done at Wed Jan 13 09:10:29 2021 -- 1 IP address (1 host up) scanned in 0.67 seconds

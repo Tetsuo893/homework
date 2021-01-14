@@ -1,0 +1,92 @@
+# Nmap 7.80 scan initiated Wed Jan 13 08:56:34 2021 as: nmap -sV -p 139,445 -oN /root/Desktop/smb-vuln-scan.txt -oX /tmp/zenmap-i_jrk2.xml --script smb-vuln-* --script-args vulns.showall 192.168.0.10
+Nmap scan report for 192.168.0.10
+Host is up (0.0024s latency).
+
+PORT    STATE SERVICE     VERSION
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+| smb-vuln-webexec: 
+|   NOT VULNERABLE:
+|   Remote Code Execution vulnerability in WebExService
+|     State: NOT VULNERABLE
+|     IDs:  CVE:CVE-2018-15442
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15442
+|       https://blog.skullsecurity.org/2018/technical-rundown-of-webexec
+|_      https://webexec.org
+445/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+| smb-vuln-webexec: 
+|   NOT VULNERABLE:
+|   Remote Code Execution vulnerability in WebExService
+|     State: NOT VULNERABLE
+|     IDs:  CVE:CVE-2018-15442
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15442
+|       https://blog.skullsecurity.org/2018/technical-rundown-of-webexec
+|_      https://webexec.org
+MAC Address: 00:15:5D:00:04:03 (Microsoft)
+
+Host script results:
+| smb-vuln-conficker: 
+|   NOT VULNERABLE:
+|   Microsoft Windows system infected by Conficker
+|     State: NOT VULNERABLE
+|     IDs:  CVE:2008-4250
+|     References:
+|       https://technet.microsoft.com/en-us/library/security/ms08-067.aspx
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=2008-4250
+|_      http://www.microsoft.com/security/portal/threat/encyclopedia/entry.aspx?Name=Win32%2fConficker
+| smb-vuln-cve-2017-7494: 
+|   NOT VULNERABLE:
+|   SAMBA Remote Code Execution from Writable Share
+|     State: NOT VULNERABLE
+|     IDs:  CVE:CVE-2017-7494
+|     References:
+|       https://www.samba.org/samba/security/CVE-2017-7494.html
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7494
+| smb-vuln-cve2009-3103: 
+|   NOT VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: NOT VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+| smb-vuln-ms06-025: 
+|   NOT VULNERABLE:
+|   RRAS Memory Corruption vulnerability (MS06-025)
+|     State: NOT VULNERABLE
+|     IDs:  CVE:CVE-2006-2370
+|     References:
+|       https://technet.microsoft.com/en-us/library/security/ms06-025.aspx
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2370
+| smb-vuln-ms07-029: 
+|   NOT VULNERABLE:
+|   Windows DNS RPC Interface Could Allow Remote Code Execution (MS07-029)
+|     State: NOT VULNERABLE
+|     IDs:  CVE:CVE-2007-1748
+|     References:
+|       https://technet.microsoft.com/en-us/library/security/ms07-029.aspx
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1748
+| smb-vuln-ms08-067: 
+|   NOT VULNERABLE:
+|   Microsoft Windows system vulnerable to remote code execution (MS08-067)
+|     State: NOT VULNERABLE
+|     IDs:  CVE:CVE-2008-4250
+|     References:
+|       https://technet.microsoft.com/en-us/library/security/ms08-067.aspx
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+| smb-vuln-ms17-010: 
+|   NOT VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: NOT VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|       https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+|_      https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+|_smb-vuln-regsvc-dos: ERROR: Script execution failed (use -d to debug)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jan 13 08:56:51 2021 -- 1 IP address (1 host up) scanned in 17.64 seconds
