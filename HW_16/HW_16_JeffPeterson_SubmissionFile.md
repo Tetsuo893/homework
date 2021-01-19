@@ -55,7 +55,7 @@ Your client has asked that you help identify any vulnerabilities with their file
 - Zenmap vulnerability script command:
   - `nmap -sV --script smb-enum-* -p 139,445 192.168.0.10`
 
-  - [smb-enum-scan](Scans/nmap-smb-enum-scan.txt)
+  - [smb-enum-scan results](Scans/nmap-smb-enum-scan.txt)
 
 Once you have identified this vulnerability, answer the following questions for your client:
   1. What is the vulnerability:
@@ -63,12 +63,13 @@ Once you have identified this vulnerability, answer the following questions for 
        ![SMB Anonymous Login](Images/HW-16-SMB-AnonymousLogin.png)
 
   2. Why is it dangerous:
-      - anyone who has the IP address can login to the SMB share and upload malicious files or take any files that might help an attacker access more of the system.
+      - Anyone who has the IP address can login to the SMB share and upload malicious files or take any sensitive files in the smb share that might help an attacker access more of the system.
 
   3. What mitigation strategies can you recommendations for the client to protect their server:
       - Add authentication requirements to access the SMB share server.
       - Make sure SMB is up to date with latest version.
       - Use more secure technologies to share information on a server and require a corporate VPN to access.
+      - Don't leave sensitive documents inside an unsecured temp folder on a server.
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
