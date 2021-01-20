@@ -48,7 +48,7 @@ For this week's homework, please use the following VM setup:
 
 Once you complete this assignment, submit your findings in the following document:
 
-- [Report.docx](Resources/Report.docx)
+- [Report.docx](Report-HW17-JeffPeterson.docx)
 
 ### Instructions
 
