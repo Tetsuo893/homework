@@ -3,18 +3,18 @@
 ### Scenario
 
 You have just been hired as an SOC Analyst by Vandalay Industries, an importing and exporting company.
- 
-- Vandalay Industries uses Splunk for their security monitoring and have been experiencing a variety of security issues against their online systems over the past few months. 
- 
+
+- Vandalay Industries uses Splunk for their security monitoring and have been experiencing a variety of security issues against their online systems over the past few months.
+
 - You are tasked with developing searches, custom reports and alerts to monitor Vandalay's security environment in order to protect them from future attacks.
 
 
-### System Requirements 
+### System Requirements
 
 You will be using the Splunk app located in the Ubuntu VM.
 
 
-### Your Objective 
+### Your Objective
 
 Utilize your Splunk skills to design a powerful monitoring solution to protect Vandaly from security attacks.
 
@@ -40,7 +40,7 @@ Let's get started!
 ## Vandalay Industries Monitoring Activity Instructions
 
 
-### Step 1: The Need for Speed 
+### Step 1: The Need for Speed
 
 **Background**: As the worldwide leader of importing and exporting, Vandalay Industries has been the target of many adversaries attempting to disrupt their online business. Recently, Vandaly has been experiencing DDOS attacks against their web servers.
 
@@ -54,15 +54,21 @@ Not only were web servers taken offline by a DDOS attack, but upload and downloa
 
 2. Using the `eval` command, create a field called `ratio` that shows the ratio between the upload and download speeds.
    - Hint: The format for creating a ratio is: `| eval new_field_name = 'fieldA'  / 'fieldB'`
-      
+
+   - ![eval ratio command](Images/splunk-ratio-command.png)
+   - ![ratio results](Images/splunk-ratio.png)
+
 3. Create a report using the Splunk's `table` command to display the following fields in a statistics report:
     - `_time`
     - `IP_ADDRESS`
     - `DOWNLOAD_MEGABITS`
     - `UPLOAD_MEGABITS`
     - `ratio`
-  
+
    Hint: Use the following format when for the `table` command: `| table fieldA  fieldB fieldC`
+
+   - ![table results](Images/splunk-results-table01.png)
+   - ![table results](Images/splunk-results-table02.png)
 
 4. Answer the following questions:
 
@@ -70,8 +76,8 @@ Not only were web servers taken offline by a DDOS attack, but upload and downloa
     - How long did it take your systems to recover?
 
 Submit a screen shot of your report and the answer to the questions above.
- 
-### Step 2: Are We Vulnerable? 
+
+### Step 2: Are We Vulnerable?
 
 **Background:**  Due to the frequency of attacks, your manager needs to be sure that sensitive customer data on their servers is not vulnerable. Since Vandalay uses Nessus vulnerability scanners, you have pulled the last 24 hours of scans to see if there are any critical vulnerabilities.
 
@@ -85,7 +91,7 @@ Submit a screen shot of your report and the answer to the questions above.
 2. Create a report that shows the `count` of critical vulnerabilities from the customer database server.
    - The database server IP is `10.11.36.23`.
    - The field that identifies the level of vulnerabilities is `severity`.
-      
+
 3. Build an alert that monitors every day to see if this server has any critical vulnerabilities. If a vulnerability exists, have an alert emailed to `soc@vandalay.com`.
 
 Submit a screenshot of your report and a screenshot of proof that the alert has been created.
@@ -106,18 +112,18 @@ Submit a screenshot of your report and a screenshot of proof that the alert has 
      - Look for the `name` field to find failed logins.
      - Note the attack lasted several hours.
 
-      
+
 3. Determine a baseline of normal activity and a threshold that would alert if a brute force attack is occurring.
 
-4. Design an alert to check the threshold every hour and email the SOC team at SOC@vandalay.com if triggered. 
+4. Design an alert to check the threshold every hour and email the SOC team at SOC@vandalay.com if triggered.
 
 Submit the answers to the questions about the brute force timing, baseline and threshold. Additionally, provide a screenshot as proof that the alert has been created.
- 
- 
+
+
 ### Your Submission
-  
+
 In a word document, provide the following:
-  - Answers to all questions where indicated. 
+  - Answers to all questions where indicated.
   - Screenshots where indicated.
 
 ---
