@@ -73,7 +73,9 @@ Not only were web servers taken offline by a DDOS attack, but upload and downloa
 4. Answer the following questions:
 
     - Based on the report created, what is the approximate date and time of the attack?
+      - Feb. 23rd, 2020 at 2:30 PM
     - How long did it take your systems to recover?
+      - About 9 hours to recover.
 
 Submit a screen shot of your report and the answer to the questions above.
 
@@ -92,7 +94,14 @@ Submit a screen shot of your report and the answer to the questions above.
    - The database server IP is `10.11.36.23`.
    - The field that identifies the level of vulnerabilities is `severity`.
 
+   - ![critical vuln search](Images/splunk-search-critical-vuln.png)
+
+
 3. Build an alert that monitors every day to see if this server has any critical vulnerabilities. If a vulnerability exists, have an alert emailed to `soc@vandalay.com`.
+
+  - ![splunk alert 1](Images/splunk-alert01.png)
+
+  - ![splunk alert 2](Images/splunk-alert02.png)
 
 Submit a screenshot of your report and a screenshot of proof that the alert has been created.
 
@@ -112,10 +121,20 @@ Submit a screenshot of your report and a screenshot of proof that the alert has 
      - Look for the `name` field to find failed logins.
      - Note the attack lasted several hours.
 
+     - ![brute force events](Images/brute-force-attempts.png)
+
 
 3. Determine a baseline of normal activity and a threshold that would alert if a brute force attack is occurring.
+  - The average of events per hour was about 13 with a couple spikes between 20-25 so we could baseline at 30 and alert anything over 30.
 
 4. Design an alert to check the threshold every hour and email the SOC team at SOC@vandalay.com if triggered.
+
+  - ![brute force attempt](Images/brute-force-attempts.png)
+
+  - ![Brute force alert](Images/brute-force-alert01.png)
+  - ![Brute force alert 2](Images/brute-force-alert02.png)
+
+
 
 Submit the answers to the questions about the brute force timing, baseline and threshold. Additionally, provide a screenshot as proof that the alert has been created.
 
