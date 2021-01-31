@@ -121,7 +121,7 @@ Submit a screenshot of your report and a screenshot of proof that the alert has 
      - Look for the `name` field to find failed logins.
      - Note the attack lasted several hours.
 
-     - ![brute force events](Images/brute-force-attempts.png)
+     - ![brute force events](Images/splunk-brute-force-range.png)
 
 
 3. Determine a baseline of normal activity and a threshold that would alert if a brute force attack is occurring.
