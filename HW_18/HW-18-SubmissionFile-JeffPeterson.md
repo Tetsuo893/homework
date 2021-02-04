@@ -99,9 +99,8 @@ Submit a screen shot of your report and the answer to the questions above.
 
 3. Build an alert that monitors every day to see if this server has any critical vulnerabilities. If a vulnerability exists, have an alert emailed to `soc@vandalay.com`.
 
-  - ![splunk alert 1](Images/splunk-alert01.png)
+  - ![splunk alert 1](Images/critical-vuln-alert.png)
 
-  - ![splunk alert 2](Images/splunk-alert02.png)
 
 Submit a screenshot of your report and a screenshot of proof that the alert has been created.
 
@@ -131,8 +130,7 @@ Submit a screenshot of your report and a screenshot of proof that the alert has 
 
   - ![brute force attempt](Images/brute-force-attempts.png)
 
-  - ![Brute force alert](Images/brute-force-alert01.png)
-  - ![Brute force alert 2](Images/brute-force-alert02.png)
+  - ![Brute force alert](Images/brute-force-alert.png)
 
 
 
