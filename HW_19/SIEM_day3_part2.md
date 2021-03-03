@@ -397,7 +397,7 @@ Analyze your dashboard panel of the URI data and answer the following questions:
   - /VSI_Accounnt_logon.php
 
 - Based on the URI being accessed, what could the attacker potentially be doing?
-  - get access to sensitive data from the company. steal secrets for JobeCorp.
+  - Locking out users to interrupt their work. steal secrets for JobeCorp.
 
 ---
 
