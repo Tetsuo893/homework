@@ -5,6 +5,8 @@
 - Critical Vulnerabilities
 - Exploitation
 
+flag1{b9bbcb33e11b80be759c4e844862482d}
+
 ### Exposed Services
 _TODO: Fill out the information below._
 
