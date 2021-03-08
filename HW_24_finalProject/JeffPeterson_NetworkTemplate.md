@@ -24,10 +24,11 @@ You must inspect your traffic capture to answer the following questions:
     - MAC address `00:59:07:b0:63:a4`
 
 2. What is the username of the Windows user whose computer is infected?
-    - `Matthijs.Devries`
+      - `Matthijs.Devries`
 3. What are the IP addresses used in the actual infection traffic?
     - `31.7.62.214` and `185.243.115.84`
 4. As a bonus, retrieve the desktop background of the Windows host.
+    - ![](images/desktop.png)
 
 ---
 
