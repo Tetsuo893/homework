@@ -43,13 +43,13 @@ The target of this attack was: `Target 1` (192.168.1.110).
 Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
 
 HTTP Errors Alert is implemented as follows:
-  - **Metric**: HTTP Status Errors
+  - **Metric**: http.response.status_code
   - **Threshold**: Above 400 over last 1 minute
   - **Vulnerability Mitigated**: Brute Force Attacks
   - **Reliability**: high
 
 SSH password failed attempts Alert is implemented as follows:
-  - **Metric**: Password failed attempts
+  - **Metric**: system.auth.ssh.method
   - **Threshold**: Failed attempts above 10 over last 5 minutes.
   - **Vulnerability Mitigated**: SSH logins
   - **Reliability**: high
@@ -59,27 +59,27 @@ SSH password failed attempts Alert is implemented as follows:
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
 Port Scans Alert is implemented as follows:
-  - **Metric**: source port
+  - **Metric**: destination.port
   - **Threshold**: count above 2000 over last 5 minutes
   - **Vulnerability Mitigated**: network scans
   - **Reliability**: high
 
 CPU Usage Monitor Alert is implemented as follows:
-  - **Metric**: CPU usage
+  - **Metric**: system.process.cpu.total.pct
   - **Threshold**: When max CPU process total above .5 over last 5 minutes.
   - **Vulnerability Mitigated**: DDoS Attacks
   - **Reliability**: medium
 
 HTTP Request Size Alert is implemented as follows:
-  - **Metric**: HTTP request size
+  - **Metric**: http.request.bytes
   - **Threshold**: Sum of HTTP request bytes is above 3500 over the last 1 minute.
   - **Vulnerability Mitigated**: Buffer Overflow Attacks
   - **Reliability**: low
 
-HTTP Errors Alert is implemented as follows:
-  - **Metric**: HTTP Status Errors
-  - **Threshold**: Above 400 over last 1 minute
-  - **Vulnerability Mitigated**: Brute Force Attacks
+Sudo Errors Alert is implemented as follows:
+  - **Metric**: system.auth.sudo.error
+  - **Threshold**: Above 1 over last 5 minutes
+  - **Vulnerability Mitigated**: Privilege escalation
   - **Reliability**: high
 
 

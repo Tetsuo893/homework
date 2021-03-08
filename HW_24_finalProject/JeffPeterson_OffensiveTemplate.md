@@ -41,7 +41,10 @@ The following vulnerabilities were identified on each target:
   - Weak password for Michael
   - Python sudo privilege access for user Steven
 
-_TODO: Include vulnerability scan results to prove the identified vulnerabilities._
+- ![](images/ssh-vuln.png)
+- ![](images/port80_01.png)
+- ![](images/port80_02.png)
+
 
 ### Exploitation
 
