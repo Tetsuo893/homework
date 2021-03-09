@@ -38,7 +38,7 @@ You must inspect your traffic capture to answer the following questions:
     - MAC address
       - `00:16:17:18:66:c8`
     - Windows username
-      - `BLANCO`
+      - `elmer blanco`
     - OS version
       - `Windows NT`
 

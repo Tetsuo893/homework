@@ -40,6 +40,8 @@ The following vulnerabilities were identified on each target:
   - Network response to ping requests
   - Weak password for Michael
   - Python sudo privilege access for user Steven
+  - CVE-2015-5600 - OpenSSH keyboard-interactive authentication brute force vulnerability (MaxAuthTries bypass)
+  - CVE-2019-10098 - Apache HTTP server 2.4.0 to 2.4.39 Redirect Vuln.
 
 - ![](images/ssh-vuln.png)
 - ![](images/port80_01.png)
